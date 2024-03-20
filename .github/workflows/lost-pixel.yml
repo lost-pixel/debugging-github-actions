@@ -21,7 +21,7 @@ jobs:
         run: npm run build
 
       - name: Run Vite app
-        run: npm run start &
+        run: npx serve dist
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
