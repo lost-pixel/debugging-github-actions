@@ -21,10 +21,7 @@ jobs:
         run: npm run build
 
       - name: Run Vite app
-        run: npx serve dist &
-
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+        run: npx serve dist -p 5173 &
 
       - name: Lost Pixel
         uses: lost-pixel/lost-pixel@v3.16.0
